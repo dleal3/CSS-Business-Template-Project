@@ -1,0 +1,153 @@
+<html>
+  <head>
+     
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- We use the link from https://fonts.google.com/?selection.family=Oswald to specify font we want to use for our page-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" />
+    
+    
+   <title>Business Template Homepage</title>
+   
+   
+  <!-- Here we have to link style sheets to our page. However for this example we are styling using the style tag -->
+   <link rel="stylesheet" href="style.css">
+ 
+    
+    <!-- CSS styling section  -->
+    <style>
+    
+      body {
+        margin: 0;
+      }
+    
+    
+      a {
+        text-decoration: none;
+      }
+    
+      /*This is the horizontal boxes on the page*/
+      .horizontal-boxes {
+        /*We use float to seperate the gaps for between the nav and the box below*/
+        margin: 0;
+        float: left;
+        clear: left;
+        width: 100%;
+      }
+    
+      /*This is the navigation bar*/
+      #navigation {
+        height: 120px;
+        background-color: white;
+      }
+        
+          #navigation #logo {
+          padding: 20px 80px;
+          height: 80px;
+          float: left;
+          
+          }
+      
+            .navigation-button {
+            float: left;
+            padding: 50px 30px 0 30px;
+            font-weight: bold;
+            height: 120px;
+            }
+                
+                .navigation-button a{
+                color: black;
+                text-decoration: none;
+                font-family: Oswald;
+                }        
+        
+        
+        
+            /* We use hover command from https://stackoverflow.com/questions/20289481/css-change-background-color-on-hover to change the back ground when user hovers over area of content*/
+            .navigation-button:hover {
+            background: #3374C2;
+            }
+          
+          
+          
+                .navigation-button:hover a {
+                background: #3374C2;
+                color: white;
+                }      
+          
+          
+          
+    
+      /*This is main heading. We also set the backgorund setting the url as explained in https://stackoverflow.com/questions/376253/stretch-and-scale-css-background*/
+      #heading { 
+        font-family: Oswald;
+        color: white;
+        padding: 5em 0;
+        height: 20em;
+        background-color: #335544;
+        background-image: url("https://ak6.picdn.net/shutterstock/videos/1768991/thumb/1.jpg");
+        background-size: cover;
+
+      }
+        /*child h1*/
+        #heading h1{
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        
+          #heading  #call-to-action {
+            background-color: orange
+            /*border-radius: 1em;*/
+          }
+          
+            #heading #call-to-action a {
+              color: white;
+            }
+          
+        
+    </style>
+    
+  </head>
+  
+  
+  <body>
+    
+    <div id="navigation" class="horizontal-boxes">
+      
+      <img id="logo" src="https://c.martech.zone/wp-content/uploads/2010/06/example-logo.png" >
+      
+      <div class="navigation-button"><a href="#">Home</a></div>
+      <div class="navigation-button"><a href="#">Portfolio</a></div>
+      <div class="navigation-button"><a href="#">About</a></div>
+      <div class="navigation-button"><a href="#">Contacts</a></div>
+      <div class="navigation-button"><a href="#">Blog</a></div>
+      
+    </div>
+    
+    
+    
+    <div id="heading" class="horizontal-boxes">
+      
+      <h1>Good Design Is Good Business</h1>
+      
+      <div style="width:50%;margin:auto;text-align:center;" >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      
+        <div id="call-to-action">
+          <a href="#">LEARN MORE</a>
+        </div>
+      
+      </div>
+      
+      
+      
+    </div>    
+    
+    
+    
+  </body>
+  
+</html>
